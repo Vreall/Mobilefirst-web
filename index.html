@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/ad9855e02c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="body" onresize="reset1()">
+    <nav>
+        <p id="logo">JJO</p>          
+        <!-- <p id="burgerMenu" onclick="burgerIn()"><i class="fas fa-bars"></i></p> -->
+        <div id="burgerMenu" class="burgerMenu" onclick="burgerIn()"><div class="burger_menu"></div></div>
+    </nav>
+    <div id="menuSlider" class="sliderView">
+        <ul id="menu">
+            <li id="login" onclick="loginClick()">Login</li>
+            <li>Discounts</li>
+            <li>About Us</li>
+            <li>FAQ</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+    <div id="container">      
+        <header>
+            <ul class="menudesktop">
+                <li id="login" class="loginBtn login" onclick="loginClick()">Login</li>
+                <li>Discounts</li>
+                <li>About Us</li>
+                <li>FAQ</li>
+                <li>Blog</li>
+            </ul>
+            <h1 id="title">Juniors make IT work</h1>
+            <p class="header_p">Hire and invest in highly skilled juniors now.</p>
+            <button id="btnOffer" class="btnOffer">Post Offer Now</button>
+        </header>
+        <main>
+            <h1>Newest Job Offers</h1>
+            <div  class="offer_container">  
+                <div  id="offer_container" class="offer_container_to_slide" style="left:0;" >          
+                <div id="offer1" class="offer1  offer">
+                    <h3 class="offer_h3">Junior Java Developer</h3>
+                    <p class="offer_style  offer_p1">PickSaas</p>
+                    <p class="offer_style">Wrosław, Polska</p>
+                    <a class="offer_content">I am currently looking for a Java Developer. Project for Public Sector Location: Wrocław (during the pandemic remote work)
+                    <br>$ up to PLN 550 net / MD B2B</a>
+                    <div class="offer_btn"><button class="btntest">></button></div>
+                </div>
+                <div id="offer2" class="offer2  offer offerright">
+                    <h3 class="offer_h3">Junior Project Manager</h3>
+                    <p class="offer_style  offer_p1">Frontkom</p>
+                    <p class="offer_style">Lublin, Polska</p>
+                    <a class="offer_content">Join us in the Lublin office to build innovative long-term projects. Exciting international clients and partners and a work environment focused on learning and growth awaits you! 
+                    </a>
+                    <div class="offer_btn"><button class="btntest">></button></div>
+                </div>
+                <div id="offer3" class="offer3  offer offerright">
+                    <h3 class="offer_h3">Junior Project Manager</h3>
+                    <p class="offer_style  offer_p1">PickSaas</p>
+                    <p class="offer_style">Wrocław, Polska</p>
+                    <a class="offer_content">I am currently looking for a Java Developer. Project for Public Sector Location:Wrocław (during the pandemic remote work)
+                    $ up to PLN 550 net / MD B2B</a>
+                    <div class="offer_btn"><button class="btntest">></button></div>
+                </div>
+                </div>
+                <div>
+                    <button id="prevBtn_offer" class="job_btns" onclick="prev(offer,a_offer)"><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn_offer" class="job_btns" onclick="next(offer,a_offer)"><i class="fas fa-chevron-right"></i></button>
+                </div>            
+            </div>            
+        </main>
+        <div class="firm_container">
+             <h1>Featured Companies</h1>
+                <div class="icons">
+                   <div  id="firm_container" class="firm_container_to_slide" style="left:0;" >
+                    <div id="firm1" class="firm1 firm">
+                        <div class="firm_icon"></div>
+                        <div>GrandParade</div>
+                    </div> 
+                    <div id="firm2" class="firm2 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>Seargin</div>
+                    </div>     
+                    <div id="firm3" class="firm3 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>DEX Ventures</div>
+                    </div>         
+                    <div id="firm4" class="firm4 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>NBC</div>
+                    </div> 
+                    <div id="firm5" class="firm5 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>SVT SP Zoo</div>
+                    </div> 
+                    <div id="firm6" class="firm6 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>PickSaaS</div>
+                    </div> 
+                    <div id="firm7" class="firm7 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>BlackRose</div>
+                    </div> 
+                    <div id="firm8" class="firm8 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>FrontKom</div>
+                    </div> 
+                    <div id="firm9" class="firm9 firm firmright">
+                        <div class="firm_icon"></div>
+                        <div>DEX Ventures</div>
+                    </div>    
+                    
+                    </div>    
+                    <div><button id="prevBtn_firm" class="btn_firm prevBtn_firm" onclick="prev(firm,a_firm)" ><</button>
+                        <button id="nextBtn_firm" class="btn_firm nextBtn_firm" onclick="next(firm,a_firm)">></button></div> 
+                </div>
+               
+                
+                
+        </div>
+        <div class="news_letter">
+            <h1 class="news_letter_h1">Recive new job offers.</h1>
+            <p class="news_letter_p">Want to know as soon as a new job offer is posted on our website? Subscribe to our weekly job offer digest.</p>
+            <input class="input_news_letter" type="text" placeholder="Enter e-mail address">
+            <button class="subscribe_btn">
+                Subscribe
+            </button>
+        </div>                      
+        <footer>
+        <a class="footer_style">Job Offers</a>
+        <a class="footer_style">Companies</a>
+        <a class="footer_style">Discounts</a>
+        <a class="footer_style">About Us</a>
+        <a class="footer_style">Juniors</a>
+        <a class="footer_style">FAQ</a>
+        <a class="footer_style">Blog</a>
+        <a class="footer_style">Terms</a>
+    <div class="footer_style">Privacy Policy</div></footer>
+    </div>
+    
+</body>
+</html>
